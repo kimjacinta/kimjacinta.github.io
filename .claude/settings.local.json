@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(openspec init *)",
+      "Bash(mkdir -p /tmp/design)",
+      "Bash(unzip -o \"/mnt/c/Users/Kim.Csoka/Downloads/stitch_alpine_summit_engineering.zip\" -d /tmp/design)",
+      "Read(//tmp/**)",
+      "Bash(openspec new *)",
+      "Bash(openspec status *)",
+      "Bash(openspec instructions *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)"
+    ]
+  }
+}
