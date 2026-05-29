@@ -23,7 +23,7 @@ const skills = [
 
 const chips = ['React', 'TypeScript', 'React Native', '.NET MAUI', 'ASP.NET Core', 'Azure', 'C#', 'SQL Server', 'Python', 'Azure DevOps']
 
-const nodes = [
+const nodes: Array<{ label: string; className: string; style: string; hasDot?: boolean; icon?: string; italic?: boolean; sublabel?: string }> = [
   { label: 'Agile / Scrum', className: 'left-[5%] top-[10%]', style: 'glass', hasDot: true },
   { label: 'Ownership', className: 'left-[35%] top-[40%]', style: 'primary', icon: 'rocket_launch' },
   { label: 'Adaptability', className: 'right-[5%] top-[10%]', style: 'glass' },
