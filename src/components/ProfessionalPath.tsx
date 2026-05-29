@@ -81,7 +81,7 @@ export default function ProfessionalPath() {
                       : 'bg-primary/40'
                   }`}
                 />
-                <div className="glass-panel p-10 w-full md:w-[45%] shadow-sm hover:shadow-2xl hover:glow-accent transition-all duration-500 rounded-lg">
+                <div className="glass-panel p-10 w-full md:w-[45%] shadow-sm hover:shadow-2xl hover:glow-accent transition-all duration-500 rounded-lg relative z-[2]">
                   <div className="flex justify-between items-start mb-6">
                     <h3 className="font-[Hanken_Grotesk] text-2xl font-black text-primary">
                       {entry.company}
