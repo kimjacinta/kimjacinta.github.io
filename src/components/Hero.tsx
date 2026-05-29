@@ -62,8 +62,8 @@ export default function Hero() {
         </div>
 
         {/* Right photo */}
-        <div className="col-span-12 lg:col-span-5 relative mt-20 lg:mt-0 z-10 flex justify-end">
-          <div className="relative w-full aspect-[4/5] max-w-[450px]">
+        <div className="col-span-12 lg:col-span-5 relative mt-20 lg:mt-0 z-10 flex justify-center lg:justify-end">
+          <div className="relative w-full aspect-[4/5] max-w-[280px] md:max-w-[450px]">
             <div className="absolute -top-10 -left-10 w-24 h-24 border-t-2 border-l-2 border-primary/20" />
             <div className="absolute -bottom-10 -right-10 w-24 h-24 border-b-2 border-r-2 border-primary/20" />
             <div className="w-full h-full relative overflow-hidden bg-surface-container rounded-lg shadow-[40px_40px_0px_-10px_rgba(150,143,214,0.1)] hud-border">
@@ -74,7 +74,7 @@ export default function Hero() {
               />
             </div>
             {/* Floating glass card */}
-            <div className="absolute bottom-10 -right-16 glass-panel p-6 shadow-xl animate-float rounded-lg z-30">
+            <div className="absolute bottom-10 -right-16 glass-panel p-6 shadow-xl animate-float rounded-lg z-30 hidden lg:block">
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between items-center text-[10px] text-primary/60 font-mono">
                   <span>NODE_STATUS</span>

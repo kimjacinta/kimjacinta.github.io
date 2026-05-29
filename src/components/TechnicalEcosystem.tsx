@@ -97,7 +97,7 @@ export default function TechnicalEcosystem() {
         </div>
 
         {/* Node visualization */}
-        <div className="relative h-[500px] md:h-[400px] bg-surface-container-low/30 blueprint-grid border border-primary/5 rounded-lg overflow-hidden mt-12 hud-border">
+        <div className="relative hidden md:block h-[400px] bg-surface-container-low/30 blueprint-grid border border-primary/5 rounded-lg overflow-hidden mt-12 hud-border">
           <div className="absolute inset-0 data-stream opacity-10" />
           {nodes.map((node) => (
             <div key={node.label} className={`absolute ${node.className} hover-lift z-20`}>
@@ -125,6 +125,36 @@ export default function TechnicalEcosystem() {
                   )}
                   <span
                     className={`font-black text-2xl tracking-tighter uppercase ${
+                      node.italic ? 'italic' : ''
+                    }`}
+                  >
+                    {node.label}
+                  </span>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile node layout */}
+        <div className="flex flex-wrap gap-3 mt-8 md:hidden">
+          {nodes.map((node) => (
+            <div key={node.label} className="z-20">
+              {node.style === 'primary' ? (
+                <div className="bg-primary text-white px-5 py-3 shadow-lg flex items-center gap-3 rounded-lg glow-accent">
+                  {node.icon && (
+                    <span className="material-symbols-outlined text-xl">{node.icon}</span>
+                  )}
+                  <span className="font-black text-base tracking-tighter uppercase">{node.label}</span>
+                </div>
+              ) : (
+                <div className="glass-panel px-4 py-3 shadow-md flex items-center gap-2 rounded-lg">
+                  {node.hasDot && <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />}
+                  {node.icon && (
+                    <span className="material-symbols-outlined text-primary text-sm">{node.icon}</span>
+                  )}
+                  <span
+                    className={`font-black text-sm tracking-tighter uppercase ${
                       node.italic ? 'italic' : ''
                     }`}
                   >

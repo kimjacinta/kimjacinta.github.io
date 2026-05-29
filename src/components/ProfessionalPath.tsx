@@ -54,7 +54,7 @@ export default function ProfessionalPath() {
         </div>
 
         <div className="relative pb-24" id="timeline-container">
-          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-primary/20 hidden md:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-primary/20 -translate-x-1/2" />
           <div className="timeline-line-progress" id="progress-line" />
 
           <div className="flex flex-col gap-32 relative">
@@ -75,7 +75,7 @@ export default function ProfessionalPath() {
                   </span>
                 </div>
                 <div
-                  className={`w-3 h-3 rounded-full absolute left-1/2 -translate-x-1/2 z-10 hidden md:block ${
+                  className={`w-3 h-3 rounded-full absolute left-1/2 -translate-x-1/2 z-10 ${
                     entry.active
                       ? 'bg-primary glow-accent shadow-[0_0_10px_#968fd6]'
                       : 'bg-primary/40'
